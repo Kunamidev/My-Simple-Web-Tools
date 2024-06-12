@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <link rel="icon" type="image/x-icon" href="https://r2.easyimg.io/py4d95dyk/25694.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Reset default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            padding: 0 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        main {
+            max-width: 800px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            transition: color 0.3s;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin: 20px 0;
+            padding: 10px 20px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            background-color: #f8f8f8;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+            opacity: 1;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            transform: translateY(0);
+        }
+
+        .links a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #000000;
+            background: linear-gradient(135deg, #ffffff, #cccccc);
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .links a:hover {
+            background: linear-gradient(135deg, #cccccc, #999999);
+        }
+
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #444;
+            border-radius: 10px;
+        }
+
+        /* Adjustments */
+        #datetime {
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            font-size: 18px;
+            font-weight: 500;
+            color: #333333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <main role="main">
+        <h1 class="animate__animated animate__fadeInDown">Welcome to my Simple Web Tools</h1>
+        <h2 class="animate__animated animate__fadeInUp">Made By JayMar Known as Heru</h2>
+        
+        <h3 class="animate__animated animate__fadeInUp">MY SIMPLE WEB TOOLS</h3>
+
+        <div class="links">
+            <a href="https://appstategetter-01.onrender.com">Appstate Getter</a>
+            <a href="https://token-cocokie-getter.onrender.com">Token & Cookie Getter</a>
+            <a href="https://axisllama-chatbot.onrender.com">Axis(Llama) chatbot</a>
+            <a href="https://obfuscator-javascript.onrender.com">Obfuscator</a>
+            <a href="https://sms-bomber-1.onrender.com">Sms Spammer</a>
+            <a href="https://pinterest-f7wq.onrender.com">Pinterest</a>
+            <a href="https://imguruploader.glitch.me">Imgur Uploader</a>
+            <a href="https://wallpapersearch.glitch.me">Wallpaper Search</a>
+            <a href="https://tempmailgen.glitch.me">Tempmail Gen</a>
+            <a href="https://herufbdl.glitch.me/facebookdl.html">Facebook Downloader</a>
+            <a href="https://spotifydl.glitch.me/Spotify.html">Spotify Downloader</a>
+        </div>
+
+        <div id="datetime"></div> <!-- Placeholder for displaying date and time -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 | HeruDev | All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+    // Function to display current date and time
+    function displayDateTime() {
+        const now = new Date();
+        const dateTimeString = now.toLocaleString();
+        document.getElementById('datetime').textContent = dateTimeString;
+    }
+
+    // Update date and time every second
+    setInterval(displayDateTime, 1000);
+
+    // Initial call to display date and time
+    displayDateTime();
+</script>
+
+</body>
+</html>
